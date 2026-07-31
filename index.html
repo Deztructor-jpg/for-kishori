@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Kishori ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="petals"></div>
+
+<!-- ================= LANDING PAGE ================= -->
+
+<section id="landing">
+
+    <h1>For Kishori ❤️</h1>
+
+    <p>
+        A little piece of my heart,
+        made into a website.
+    </p>
+
+    <button onclick="startStory()">
+        Begin 🌸
+    </button>
+
+</section>
+
+<!-- ================= PROLOGUE ================= -->
+
+<section id="prologue" class="hidden">
+
+    <h2>Every love story has a beginning.</h2>
+
+    <p id="prologueText"></p>
+
+    <button onclick="beginGallery()">
+        Begin Reading 📖
+    </button>
+
+</section>
+
+<!-- ================= STORY ================= -->
+
+<section id="story" class="hidden">
+
+    <h2 id="chapterTitle"></h2>
+
+    <img id="galleryImage">
+
+    <p id="caption"></p>
+
+    <div id="dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <button id="nextButton" onclick="nextPhoto()">
+        Next Chapter →
+    </button>
+
+</section>
+
+<!-- ================= OPEN WHEN ================= -->
+
+<section id="letters" class="hidden">
+
+    <h2>Open When... 💌</h2>
+
+    <div class="letter-grid">
+
+        <button onclick="openLetter(0)">
+            😊 Happy
+        </button>
+
+        <button onclick="openLetter(1)">
+            💭 Miss Me
+        </button>
+
+        <button onclick="openLetter(2)">
+            ❤️ Sad
+        </button>
+
+    </div>
+
+    <div id="letterBox"></div>
+
+    <button onclick="showSong()">
+        Continue →
+    </button>
+
+</section>
+
+<!-- ================= SONG ================= -->
+
+<section id="song" class="hidden">
+
+    <h2>Our Song 🎵</h2>
+
+    <div id="record">💿</div>
+
+    <h3>Khuda Jaane ❤️</h3>
+
+    <audio id="ourSong">
+        <source src="music/Khuda Jaane.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="playSong">▶ Play</button>
+
+    <br><br>
+
+    <button onclick="showGame()">
+        Continue →
+    </button>
+
+</section>
+
+<!-- ================= GAME ================= -->
+
+<section id="game" class="hidden">
+
+    <h2>Find My Heart ❤️</h2>
+
+    <p>Find the golden heart.</p>
+
+    <div id="heartContainer">
+
+    </div>
+
+</section>
+
+<!-- ================= WIN SCREEN ================= -->
+
+<section id="win" class="hidden">
+
+    <h1>💛</h1>
+
+    <h2>You Found It!</h2>
+
+    <p>
+        It was always yours anyway.
+        <br><br>
+        ❤️
+    </p>
+
+    <button onclick="showEnding()">
+        Continue →
+    </button>
+
+</section>
+
+<!-- ================= ENDING ================= -->
+
+<section id="ending" class="hidden">
+
+    <h1>❤️</h1>
+
+    <p id="endingText"></p>
+
+</section>
+
+<script src="script.js"></script>
+
+<!-- ================= SECRET ENDING ================= -->
+
+<section id="secret" class="hidden">
+
+    <h2>One Last Question...</h2>
+
+    <p>
+        Do you know how much I love you?
+    </p>
+
+    <div id="answerButtons">
+
+        <button id="yesBtn">
+            YES ❤️
+        </button>
+
+        <button id="noBtn">
+            NO ❤️
+        </button>
+
+    </div>
+
+</section>
+
+<section id="finalMessage" class="hidden">
+
+    <h1>❤️</h1>
+
+    <p>
+        Good.<br><br>
+
+        Because even if I spent the rest of my life trying...
+        I don't think I'd ever find enough words to tell you.<br><br>
+
+        I love you,
+        more than you'll ever know.<br><br>
+
+        — HBSP ❤️
+        <button id="replayBtn" onclick="location.reload()">
+            📖 Replay Our Story
+        </button>
+    </p>
+
+</section>
+
+<div id="easterEgg" class="hidden">
+
+    ❤️
+
+    <p>
+
+        I knew you'd find this.
+
+        <br><br>
+
+        If you've made it all the way here....
+
+        Thank you for every smile, every conversation, every memory and every moment you've given me.
+
+        If I could build a thousand websites....
+
+        None of them would ever be enough to show you how much i love you
+
+
+        ❤️
+
+    </p>
+
+</div>
+
+</body>
+</html>
